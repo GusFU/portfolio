@@ -1,0 +1,386 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: 1s ease;
+    color: aliceblue;
+    text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+
+body {
+  
+    background-image: linear-gradient(45deg, rgb(3, 7, 73), rgb(40, 2, 177));
+    background-attachment: fixed;
+    background-size: cover;
+    perspective: 2000px;
+}
+
+.box {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: none;
+    left: calc(50% - 350px);
+    top: calc(50% + 50px);
+    transform-style: preserve-3d;
+
+}
+
+.box div {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    background-image: url(fondo.jpg);
+    box-shadow: 0px 0px 5px rgb(55, 22, 132), 0px 0px 30px rgb(55, 22, 132),
+        inset 0px 0px 5px rgb(55, 22, 132), inset 0px 0px 5px rgb(55, 22, 132);
+    border: 3px solid rgb(18, 0, 82);
+}
+
+.box div:nth-child() {
+    height: 350px;
+    box-shadow: 0px 0px 10px black, 0px 0px 10px black;
+}
+
+.a {
+    transform: rotateY(0deg) translateZ(350px);
+
+}
+
+.b {
+    transform: rotateY(90deg) translateZ(350px);
+}
+
+.c {
+    transform: rotateY(180deg) translateZ(350px);
+}
+
+.d {
+    transform: rotateY(270deg) translateZ(350px);
+}
+
+.a .encabezado {
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    width: 90%;
+    height: 150px;
+
+    top: 20px;
+    border: none;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.encabezado img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20% 30% 20% 30%;
+    box-shadow: 0px 0px 10px rgb(2, 2, 156);
+}
+
+.encabezado .cabecera {
+    height: 100%;
+    position: relative;
+    border: none;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: end;
+
+}
+
+.a .tecnologias {
+    box-shadow: 0px 0px 10px rgb(2, 2, 156);
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    width: 90%;
+    height: 130px;
+    top: 20px;
+    border: none;
+    background: none;
+
+}
+.tecnologias::-webkit-scrollbar{
+    background-color: rgb(2, 2, 93, .4);
+    border-radius: 10px;
+}
+.tecnologias::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgba(68, 68, 210, 0.5),rgba(12, 12, 36, 0.5)) ;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+
+.tecnologias img {
+    line-height: 110px;
+    height: 110px;
+    margin: 1px;
+
+}
+.a .sobremi{
+    margin: auto;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    left: 10px;
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    box-shadow: none;
+    background: none;
+   
+   
+    margin: 10px;
+   
+}
+.sobremi h3{
+    margin-top: 40px;
+    
+text-decoration: underline;
+margin-bottom: 10px;
+
+}
+
+
+.btm {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+#chk1:checked~.box {
+    transform: rotateY(-90deg);
+}
+
+#chk2:checked~.box {
+    transform: rotateY(-180deg);
+}
+
+#chk3:checked~.box {
+    transform: rotateY(-270deg);
+}
+
+#chk4:checked~.box {
+    transform: rotateY(-360deg);
+}
+.b h1{
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    width: 90%;
+    height: 50px;
+
+    top: 20px;
+    border: none;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.b .titulo{
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    width: 90%;
+    height: 50px;
+
+    top: 20px;
+    border: none;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.b .contenedor2{
+    box-shadow: 0px 0px 10px rgb(2, 2, 156);
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    position: relative;
+    width: 90%;
+    height: 500px;
+    top: 20px;
+    border: 1px solid rgb(5, 5, 152, .5);
+    background: none;
+}
+.contenedor2::-webkit-scrollbar{
+    background-color: rgb(2, 2, 93, .4);
+    border-radius: 10px;
+}
+.contenedor2::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgba(68, 68, 210, 0.5),rgba(12, 12, 36, 0.5)) ;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+
+.b .proyectos{
+    
+    box-shadow: 0px 0px 10px rgb(2, 2, 156);
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    width: 90%;
+    min-height: 200px;
+    top: 20px;
+    border: none;
+    background: none;
+    
+}
+.proyectos img{
+    line-height: 110px;
+    height: 110px;
+    margin: 1px;
+}
+
+.proyectos img{
+    line-height: 180px;
+    height: 180px;
+    margin: 1px;
+}
+
+.proyectos::-webkit-scrollbar{
+    background-color: rgb(2, 2, 93, .4);
+    border-radius: 10px;
+}
+.proyectos::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgba(68, 68, 210, 0.5),rgba(12, 12, 36, 0.5)) ;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+.c h1{
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    width: 90%;
+    height: 50px;
+
+    top: 20px;
+    border: none;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.c .curriculum{
+    margin-top: 20px;
+    margin-left: 35px;
+    width: 90%;
+    height: 500px;
+    border: none;
+    box-shadow: 0px 0px 10px rgb(2, 2, 156);
+    background: none;
+   
+   
+}
+.c object{
+    align-self: center;
+    min-width: 100%;
+    min-height: 100%;
+
+}
+.d h1{
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    width: 90%;
+    height: 50px;
+
+    top: 20px;
+    border: none;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.d .contactos{
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    width: 90%;
+    height: 150px;
+
+    top: 20px;
+    border: none;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+
+.d .contactos .contac{
+    position: absolute;
+    margin: auto;
+    width: 90%;
+    height: 100px;
+    border: none;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.d .contactos .contac1{
+    position: absolute;
+    margin: auto;
+    width: 90%;
+    height: 100px;
+    top: 200px;
+    border: none;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.d .contactos .contac2{
+    position: absolute;
+    margin: auto;
+    width: 90%;
+    height: 100px;
+    top: 400px;
+    border: none;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    
+
+}
+.contac img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+.contac1 img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+.contac2 img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}

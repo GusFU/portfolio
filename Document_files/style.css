@@ -1,0 +1,148 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: 1s ease;
+    color: aliceblue;
+}
+
+body {
+    background-image: linear-gradient(45deg, rgb(3, 7, 73), rgb(40, 2, 177));
+    background-attachment: fixed;
+    background-size: cover;
+    perspective: 2000px;
+}
+
+.box {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: none;
+    left: calc(50% - 350px);
+    top: calc(50% + 50px);
+    transform-style: preserve-3d;
+
+}
+
+.box div {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    background-image: url(fondo.jpg);
+    box-shadow: 0px 0px 5px rgb(55, 22, 132), 0px 0px 30px rgb(55, 22, 132),
+        inset 0px 0px 5px rgb(55, 22, 132), inset 0px 0px 5px rgb(55, 22, 132);
+    border: 3px solid rgb(18, 0, 82);
+}
+
+.box div:nth-child() {
+    height: 350px;
+    box-shadow: 0px 0px 10px black, 0px 0px 10px black;
+}
+
+.a {
+    transform: rotateY(0deg) translateZ(350px);
+
+}
+
+.b {
+    transform: rotateY(90deg) translateZ(350px);
+}
+
+.c {
+    transform: rotateY(180deg) translateZ(350px);
+}
+
+.d {
+    transform: rotateY(270deg) translateZ(350px);
+}
+
+.a .encabezado {
+    margin: auto;
+    position: relative;
+    width: 90%;
+    height: 150px;
+
+    top: 20px;
+    border: none;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.encabezado img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20% 30% 20% 30%;
+    box-shadow: 0px 0px 10px rgb(2, 2, 156);
+}
+
+.encabezado .cabecera {
+    height: 100%;
+    position: relative;
+    border: none;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: end;
+
+}
+
+.a .tecnologias {
+    box-shadow: 0px 0px 10px rgb(2, 2, 156);
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    width: 90%;
+    height: 130px;
+    top: 20px;
+    border: none;
+    background: none;
+
+}
+.tecnologias::-webkit-scrollbar{
+    background-color: rgb(2, 2, 93);
+    border-radius: 10px;
+}
+.tecnologias::-webkit-scrollbar-thumb{
+    background-color: rgb(5, 5, 152);
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+
+.tecnologias img {
+    line-height: 110px;
+    height: 110px;
+    margin: 1px;
+
+}
+
+.btm {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+#chk1:checked~.box {
+    transform: rotateY(-90deg);
+}
+
+#chk2:checked~.box {
+    transform: rotateY(-180deg);
+}
+
+#chk3:checked~.box {
+    transform: rotateY(-270deg);
+}
+
+#chk4:checked~.box {
+    transform: rotateY(-360deg);
+}
