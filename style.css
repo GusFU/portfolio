@@ -13,6 +13,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     perspective: 2000px;
+    height: 150vh;
 }
 
 .box {
@@ -21,7 +22,7 @@ body {
     height: 700px;
     background: none;
     left: calc(50% - 350px);
-    top: calc(50% + 50px);
+    top: calc(10% + 50px);
     transform-style: preserve-3d;
 
 }
