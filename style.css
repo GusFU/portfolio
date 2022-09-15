@@ -14,6 +14,7 @@ body {
     background-size: cover;
     perspective: 2000px;
     height: 150vh;
+    width: 150vh;
 }
 
 .box {
